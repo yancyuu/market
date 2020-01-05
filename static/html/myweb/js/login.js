@@ -1,6 +1,6 @@
 
 $(function () {
-    $.getJSON("/api/login/",function (data) {
+    $.getJSON("login/",function (data) {
         console.log(data);
         console.log("success");
 
@@ -33,7 +33,7 @@ $(function () {
          //用变量存取用户的用户名和密码
         var username = $("#InputUname").val();
         var password = $("#InputPassword").val();
-         $.ajax("/api/login/",{
+         $.ajax("login/",{
             // 期待返回的数据类型，不写会自动判断， 根据mime
             dataType: "json",
             type: "POST",
